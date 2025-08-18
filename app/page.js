@@ -29,7 +29,7 @@ export default function Page() {
 
         <div className="max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h1 className="text-3xl md:text-5xl font-black leading-tight">Full Stack Developerr</h1>
+            <h1 className="text-3xl md:text-5xl font-black leading-tight">Full Stack Developer</h1>
             <p className="mt-3 text-slate-600 text-lg">MERN · Next.js · React Native</p>
             <p className="mt-4 max-w-prose text-slate-700">
               Final year BCA student building scalable web & mobile apps. I focus on clean UI, performance, and real‑time experiences.
