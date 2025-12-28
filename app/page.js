@@ -15,7 +15,7 @@ export default function Page() {
             Suraj <span className="text-indigo-600">Gaud</span>
           </a>
           <div className="hidden sm:flex gap-6 text-sm font-medium">
-            {["about", "Skills", "Projects", "Educationn", "Contact"].map(
+            {["about", "Skills", "Projects", "Education", "Contact"].map(
               (item) => (
                 <Link
                   key={item}
