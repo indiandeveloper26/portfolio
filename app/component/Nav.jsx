@@ -18,10 +18,10 @@ export default function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="sticky top-0 z-50 backdrop-blur bg-white/70 border-b shadow-sm">
+        <nav className="sticky top-0 z-50 backdrop-blur bg-white/90 border-b shadow-sm">
             <div className="max-w-7xl mx-auto h-16 px-6 flex items-center justify-between">
                 {/* LOGO */}
-                <Link href="/" className="font-black text-xl">
+                <Link href="/" className="font-black text-xl text-gray-900">
                     Suraj<span className="text-indigo-600">.dev</span>
                 </Link>
 
@@ -32,18 +32,21 @@ export default function Navbar() {
                             key={item.label}
                             href={item.href}
                             whileHover={{ y: -2 }}
-                            className="relative text-slate-700 hover:text-indigo-600 transition"
+                            className="relative text-gray-800 hover:text-indigo-600 transition group"
                         >
                             {item.label}
                             {/* underline hover */}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-indigo-600 group-hover:w-full transition-all" />
+                            <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-indigo-600 group-hover:w-full transition-all"></span>
                         </motion.a>
                     ))}
                 </div>
 
                 {/* Mobile Hamburger */}
                 <div className="md:hidden">
-                    <button onClick={toggleMenu} className="p-2 rounded-md text-slate-700 hover:bg-slate-100 transition">
+                    <button
+                        onClick={toggleMenu}
+                        className="p-2 rounded-md text-gray-800 hover:bg-gray-100 transition"
+                    >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
@@ -65,7 +68,7 @@ export default function Navbar() {
                                     key={item.label}
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="text-slate-700 font-medium hover:text-indigo-600 transition"
+                                    className="text-gray-800 font-medium hover:text-indigo-600 transition"
                                 >
                                     {item.label}
                                 </a>
