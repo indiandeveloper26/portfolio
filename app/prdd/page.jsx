@@ -1,6 +1,3 @@
-
-
-
 'use client'
 import { useState } from 'react';
 
@@ -97,14 +94,14 @@ export default function Page() {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 font-sans text-gray-800 space-y-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 font-sans text-gray-800 space-y-10 bg-white">
 
             {/* Header */}
             <header className="text-center sm:text-left">
-                <h1 className="text-3xl sm:text-4xl font-bold mb-2">
+                <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-900">
                     PharmaConnect – Product Requirement Document (PRD)
                 </h1>
-                <p className="text-gray-600 sm:text-lg">
+                <p className="text-gray-700 sm:text-lg">
                     B2B + B2C Pharma E-Commerce Platform | Version 1.0 | Owner: Aditya
                 </p>
             </header>
@@ -114,8 +111,8 @@ export default function Page() {
 
                 {/* 1. Product Overview */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">1. Product Overview</h2>
-                    <p>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">1. Product Overview</h2>
+                    <p className="text-gray-800">
                         PharmaConnect is a full-stack pharma e-commerce platform designed for wholesalers
                         to sell medicines directly to medical stores, hospitals, doctors, and end customers.
                         The platform ensures regulatory compliance, prescription verification, inventory control,
@@ -125,8 +122,8 @@ export default function Page() {
 
                 {/* 2. Target Users */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">2. Target Users</h2>
-                    <ul className="list-disc list-inside space-y-1">
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">2. Target Users</h2>
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li>Admin (Wholesaler Company)</li>
                         <li>B2B Buyers (Medical Stores, Hospitals, Clinics)</li>
                         <li>Doctors (Prescription-based ordering)</li>
@@ -137,12 +134,12 @@ export default function Page() {
 
                 {/* 3. Business Problem & Solution */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">3. Business Problem & Solution</h2>
-                    <p>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">3. Business Problem & Solution</h2>
+                    <p className="text-gray-800">
                         Traditional pharma distribution relies heavily on manual ordering, phone calls,
                         and offline billing, leading to delays, errors, and poor visibility.
                     </p>
-                    <p className="mt-2">
+                    <p className="mt-2 text-gray-800">
                         PharmaConnect digitizes the entire workflow — ordering, prescription validation,
                         invoicing, and delivery — resulting in faster operations, reduced errors,
                         and scalable growth.
@@ -151,8 +148,8 @@ export default function Page() {
 
                 {/* 4. Core Features */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">4. Core Features</h2>
-                    <ul className="list-disc list-inside space-y-1">
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">4. Core Features</h2>
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li>Role-based authentication (Admin, B2B, Doctor, Customer)</li>
                         <li>Medicine catalog with batch & expiry tracking</li>
                         <li>Prescription upload & pharmacist verification</li>
@@ -165,10 +162,10 @@ export default function Page() {
 
                 {/* 5. User Workflows */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">5. Real-World User Workflows</h2>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">5. Real-World User Workflows</h2>
 
-                    <h4 className="font-semibold mt-4">B2C Customer Flow</h4>
-                    <ol className="list-decimal list-inside space-y-1">
+                    <h4 className="font-semibold mt-4 text-gray-900">B2C Customer Flow</h4>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-800">
                         <li>Signup using phone number (OTP)</li>
                         <li>Browse medicines & upload prescription</li>
                         <li>Prescription verified by pharmacist</li>
@@ -176,8 +173,8 @@ export default function Page() {
                         <li>Delivery & invoice</li>
                     </ol>
 
-                    <h4 className="font-semibold mt-4">B2B Buyer Flow</h4>
-                    <ol className="list-decimal list-inside space-y-1">
+                    <h4 className="font-semibold mt-4 text-gray-900">B2B Buyer Flow</h4>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-800">
                         <li>Admin approval with GST & license</li>
                         <li>Access B2B pricing & credit</li>
                         <li>Bulk or repeat orders</li>
@@ -187,8 +184,8 @@ export default function Page() {
 
                 {/* 6. Regulatory & Compliance */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">6. Regulatory & Compliance</h2>
-                    <ul className="list-disc list-inside space-y-1">
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">6. Regulatory & Compliance</h2>
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li>Drugs & Cosmetics Act compliance</li>
                         <li>Mandatory prescription for Schedule H/H1 drugs</li>
                         <li>Secure prescription storage (audit-ready)</li>
@@ -199,7 +196,7 @@ export default function Page() {
 
                 {/* 7. Development Plans & Scope Details */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-4">7. Development Plans & Scope Details</h2>
+                    <h2 className="text-2xl font-semibold mb-4 text-gray-900">7. Development Plans & Scope Details</h2>
 
                     {/* Plan Tabs */}
                     <div className="flex flex-wrap gap-3 mb-6">
@@ -207,7 +204,7 @@ export default function Page() {
                             <button
                                 key={p}
                                 onClick={() => setPlan(p)}
-                                className={`px-4 py-2 rounded font-medium ${plan === p ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'
+                                className={`px-4 py-2 rounded font-medium ${plan === p ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-800'
                                     }`}
                             >
                                 {p.toUpperCase()}
@@ -216,39 +213,39 @@ export default function Page() {
                     </div>
 
                     {/* Plan Details */}
-                    <div className="bg-gray-50 p-6 rounded border space-y-4">
+                    <div className="bg-gray-100 p-6 rounded border space-y-4">
 
-                        <h3 className="text-xl font-semibold">{plan.toUpperCase()} PLAN – Scope & Deliverables</h3>
+                        <h3 className="text-xl font-semibold text-gray-900">{plan.toUpperCase()} PLAN – Scope & Deliverables</h3>
 
                         <div>
-                            <h4 className="font-semibold mb-1">Included Features</h4>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h4 className="font-semibold mb-1 text-gray-900">Included Features</h4>
+                            <ul className="list-disc list-inside space-y-1 text-gray-800">
                                 {plans[plan].features.map((f, i) => <li key={i}>{f}</li>)}
                             </ul>
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-1">Modules Covered</h4>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h4 className="font-semibold mb-1 text-gray-900">Modules Covered</h4>
+                            <ul className="list-disc list-inside space-y-1 text-gray-800">
                                 {plans[plan].modules.map((m, i) => <li key={i}>{m}</li>)}
                             </ul>
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-1">Development Timeline & Screens</h4>
-                            <p>Timeline: <b>{plans[plan].timeline}</b></p>
-                            <p>Website Screens: <b>{plans[plan].screens.web}</b>, Mobile App Screens: <b>{plans[plan].screens.app}</b></p>
+                            <h4 className="font-semibold mb-1 text-gray-900">Development Timeline & Screens</h4>
+                            <p className="text-gray-800">Timeline: <b>{plans[plan].timeline}</b></p>
+                            <p className="text-gray-800">Website Screens: <b>{plans[plan].screens.web}</b>, Mobile App Screens: <b>{plans[plan].screens.app}</b></p>
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-1">Commercials</h4>
-                            <p>Development Cost: <b>{plans[plan].cost}</b></p>
-                            <p>Monthly Maintenance: <b>{plans[plan].maintenance}</b></p>
+                            <h4 className="font-semibold mb-1 text-gray-900">Commercials</h4>
+                            <p className="text-gray-800">Development Cost: <b>{plans[plan].cost}</b></p>
+                            <p className="text-gray-800">Monthly Maintenance: <b>{plans[plan].maintenance}</b></p>
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-1">Limitations / Not Included</h4>
-                            <ul className="list-disc list-inside space-y-1">
+                            <h4 className="font-semibold mb-1 text-gray-900">Limitations / Not Included</h4>
+                            <ul className="list-disc list-inside space-y-1 text-gray-800">
                                 {plans[plan].limitations.map((l, i) => <li key={i}>{l}</li>)}
                             </ul>
                         </div>
@@ -258,10 +255,10 @@ export default function Page() {
 
                 {/* 8. Technology Stack */}
                 <section className="bg-white shadow rounded-lg p-6 overflow-x-auto">
-                    <h2 className="text-2xl font-semibold mb-4">8. Technology Stack</h2>
-                    <table className="min-w-full border-collapse border text-left text-gray-700">
+                    <h2 className="text-2xl font-semibold mb-4 text-gray-900">8. Technology Stack</h2>
+                    <table className="min-w-full border-collapse border text-left text-gray-800">
                         <thead>
-                            <tr className="bg-gray-100">
+                            <tr className="bg-gray-200">
                                 <th className="border px-3 py-2">Layer</th>
                                 <th className="border px-3 py-2">Technology</th>
                                 <th className="border px-3 py-2">Purpose</th>
@@ -269,7 +266,7 @@ export default function Page() {
                         </thead>
                         <tbody>
                             {techStack.map((t, i) => (
-                                <tr key={i} className={i % 2 === 0 ? 'bg-gray-50' : ''}>
+                                <tr key={i} className={i % 2 === 0 ? 'bg-gray-100' : ''}>
                                     <td className="border px-3 py-2">{t[0]}</td>
                                     <td className="border px-3 py-2">{t[1]}</td>
                                     <td className="border px-3 py-2">{t[2]}</td>
@@ -281,8 +278,8 @@ export default function Page() {
 
                 {/* 9. Non-Functional Requirements */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">9. Non-Functional Requirements</h2>
-                    <ul className="list-disc list-inside space-y-1">
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">9. Non-Functional Requirements</h2>
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li><b>Availability & Uptime:</b> ≥ 99.5% monthly uptime, excluding maintenance.</li>
                         <li><b>Performance:</b> Page load under 3s on 4G for 95% requests.</li>
                         <li><b>Scalability:</b> Support 10,000+ concurrent users without degradation.</li>
@@ -295,17 +292,17 @@ export default function Page() {
 
                 {/* 10. Risks & Assumptions */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">10. Risks & Assumptions</h2>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">10. Risks & Assumptions</h2>
 
-                    <h4 className="font-semibold mt-2">Assumptions</h4>
-                    <ul className="list-disc list-inside space-y-1">
+                    <h4 className="font-semibold mt-2 text-gray-900">Assumptions</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li>All users upload valid prescriptions.</li>
                         <li>B2B buyers provide correct GST & licenses.</li>
                         <li>Payment & SMS gateways maintain uptime.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">Risks</h4>
-                    <ul className="list-disc list-inside space-y-1">
+                    <h4 className="font-semibold mt-4 text-gray-900">Risks</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li><b>Regulatory Risk:</b> Pharma law changes may require system updates.</li>
                         <li><b>Operational Risk:</b> Incorrect inventory may cause order failures.</li>
                         <li><b>Security Risk:</b> Unauthorized access/data breaches.</li>
@@ -315,8 +312,8 @@ export default function Page() {
 
                 {/* 11. Rollout & Deployment */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">11. Rollout & Deployment Plan</h2>
-                    <ol className="list-decimal list-inside space-y-1">
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">11. Rollout & Deployment Plan</h2>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-800">
                         <li><b>Staging & Internal QA:</b> Full feature testing in staging environment.</li>
                         <li><b>Pilot Launch:</b> Limited rollout in a city or selected B2B partners.</li>
                         <li><b>Production Launch:</b> Gradual rollout to all users with monitoring & rollback.</li>
@@ -327,8 +324,8 @@ export default function Page() {
 
                 {/* 12. Support & SLA */}
                 <section className="bg-white shadow rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold mb-2">12. Support & SLA</h2>
-                    <ul className="list-disc list-inside space-y-1">
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">12. Support & SLA</h2>
+                    <ul className="list-disc list-inside space-y-1 text-gray-800">
                         <li><b>Support Hours:</b> 9 AM – 6 PM business days.</li>
                         <li><b>Critical Issues (P1):</b> Resolved within 24 hours.</li>
                         <li><b>High Priority (P2):</b> Resolved within 48 hours.</li>
@@ -341,13 +338,10 @@ export default function Page() {
             </div>
 
             {/* Footer */}
-            <footer className="mt-12 pt-6 border-t text-center text-gray-600">
+            <footer className="mt-12 pt-6 border-t text-center text-gray-700">
                 <p>This document represents a real-world, scalable pharma commerce solution ready for production deployment.</p>
             </footer>
 
         </div>
     );
 }
-
-
-
